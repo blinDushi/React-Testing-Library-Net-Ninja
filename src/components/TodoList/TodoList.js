@@ -32,6 +32,7 @@ function TodoList({ todos, setTodos }) {
               key={todo.id}
               className={`todo-item ${todo.completed && "todo-item-active"}`}
               onClick={() => updateTask(todo.id)}
+              data-testid="task-container"
             >
               {todo.task}
             </div>
